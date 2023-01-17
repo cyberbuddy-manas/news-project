@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <header>
+            <div></div>
+            <div>
+                <h1>Webcooks Headlines</h1>
+            </div>
+            <div>
+                <button>Signup</button>
+            </div>
+            <i onclick="menuUnhide()" class="fas fa-bars"></i>
+        </header>
+        <section id="menu" class="menu">
+            <div>
+                <i onclick="menuHide()" class="fa-solid fa-rectangle-xmark"></i>
+            </div>
+            <div>
+                <button>Signup</button>
+            </div>
+        </section>
+        <section class="main-container">
+            <main>
+                <h1>Signup</h1>
+                <input type="text" placeholder="Username" id="user" />
+                <input type="Email Id" placeholder="email Id" id="email" />
+                <input type="password" placeholder="password"id="pass"/>
+                <input type="Confirm password" placeholder="confirm password" id="con"/>
+                <button>Signup</button>
+                <div>
+                    <div>
+                        <input type="checkbox" id="rem-me" />
+                        <label for="rem-me">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </main>
+            <a href="#" class="crt-acc">Create an Account</a>
+        </section>
+    
+        <script src="./main.js"></script>
+    </body>
+    
+    </html>
+</body>
+</html>
