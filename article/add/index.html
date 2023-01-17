@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webcooks News</title>
+
+    <!--========= Meta Tags ==========-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== Font Awesome Library ===========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--========== Stylesheets ===========-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <div>
+            <h1>Webcooks Headlines</h1>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+        <i onclick="menuUnhide()" class="fas fa-bars"></i>
+    </header>
+    <section id="menu" class="menu">
+        <div>
+            <i onclick="menuHide()" class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="head">
+            <input type="text" class="headline" id="headline" placeholder="Add headline of your Article" />
+            <select id="category" class="category">
+                <option value="none">Select a Category</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Technology">Technology</option>
+                <option value="Commerce">Commerce</option>
+            </select>
+        </div>
+        <textarea id="article" class="article" cols="30" rows="15" placeholder="Write your article here"></textarea>
+        <button>Submit</button>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
