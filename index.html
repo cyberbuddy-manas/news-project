@@ -22,11 +22,11 @@
     <header>
         <div></div>
         <div>
-            <h1>Webcooks Headlines</h1>
+            <h1><a href="./index.html">Webcooks Headlines</a></h1>
         </div>
-        <div>
-            <button>Login</button>
-            <button>Signup</button>
+        <div class="auth">
+            <a href="./login/index.html"><button>Login</button></a>
+            <a href="./signup/index.html"><button>Signup</button></a>
         </div>
         <i onclick="menuUnhide()" class="fas fa-bars"></i>
     </header>
@@ -35,14 +35,15 @@
             <i onclick="menuHide()" class="fa-solid fa-rectangle-xmark"></i>
         </div>
         <div>
-            <button>Login</button>
-            <button>Signup</button>
+            <a href="./login/index.html"><button>Login</button></a>
+            <a href="./signup/index.html"><button>Signup</button></a>
         </div>
     </section>
     <section class="main-container">
         <aside class="left">
             <h1>Categories</h1>
             <ul>
+                <li><input type="checkbox" id="All" checked="true"><label for="All">All</label></li>
                 <li><input type="checkbox" id="Fashion"><label for="Fashion">Fashion</label></li>
                 <li><input type="checkbox" id="Entertainment"><label for="Entertainment">Entertainment</label></li>
                 <li><input type="checkbox" id="Technology"><label for="Technology">Technology</label></li>

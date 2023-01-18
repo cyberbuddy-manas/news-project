@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     color: white;
     background-color: #7A6BB8;
@@ -22,14 +27,14 @@ header div:nth-child(2) h1 {
     text-align: center;
 }
 
-header div:nth-child(3) {
+header div.auth {
     display: flex;
     gap: 30px;
     justify-content: end;
 }
 
-header div:nth-child(3) button {
-    padding: 0px 30px;
+header div.auth button {
+    padding: 8px 30px;
     font-weight: bold;
 }
 
@@ -177,7 +182,7 @@ section.main-container main div.news-compo hr {
 }
 
 @media (max-width: 700px) {
-    header div:nth-child(3) {
+    header div.auth {
         display: none;
     }
 
